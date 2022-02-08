@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'static/bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'static/css/bir.css' %}">
+    <title>Mukhammadaziz's Blog</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row navbar">
+            <div class="col-12 col-md-6 col-sm-6 navbar-icon"><a href="./index.html"><em>Mukhammadaziz's Blog</em></a></div>
+            <div class="col-12 col-md-6 col-sm-6 navbar-link">
+                <div><a href="/about/">About</a></div>
+                <div><a href="/blog/">Blog</a></div>
+            </div>
+        </div>
+        <div class="row header">
+            <div class="col-12 col-md-3 col-sm-12 header-img">
+                <img src="{% static 'media/photo/thumb-350-1191167.png' %}">
+            </div>
+            <div class="col-12 col-md-9 col-sm-12 header-text">
+                <em><h1>Mukhammadaziz Okhunov</h1></em>
+                <strong><p>Programmer</p></strong>
+                <a href="https://www.youtube.com/"><img src="{% static 'media/photo/youtube.png' %}"></a>
+                <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor/"><img src="{% static 'media/photo/twitter.png' %}"></a>
+                <a href="https://github.com/Mukhammadaziz-Okhunov"><img src="{% static 'media/photo/github.png' %}"></a>
+                <a href="#"><img src="{% static 'media/photo/in.png' %}"></a>
+            </div>
+            <div class="col-12 col-md-12 col-sm-12 header-btn">
+                <em><p>I write about non-technical stuff in the technical world</p></em>
+                <a class="btn-1" href="/blog/">Blog</a>
+                <a class="btn-2" href="/about/">About</a>
+            </div>
+            <div class="row footer">
+                <div class="col-12">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

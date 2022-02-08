@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-12 col-md-6 col-sm-6 navbar-icon"><a href="./bir.html">Mukhammadaziz's Blog</a></div>
+            <div class="col-12 col-md-6 col-sm-6 navbar-link">
+                <div><a href="./about.html">About</a></div>
+                <div><a href="./blog.html">Blog</a></div>
+                <div><a href="#">Channel</a></div>
+            </div>
+        </div>
+        <div class="row blog">
+            <div class="col-12">
+                <h1>Blog</h1>
+            </div>
+        </div>
+        <div class="row main">
+            {% for i in maqolalar %}
+            <div class="col-12 col-md-6 col-sm-6 main-card1">
+                <strong><p>{{ i.time.year}}</p></strong>
+                <h3>December</h3>
+                <div class="main-card1-link">
+                    <strong><a href="/maqola/{{ i.id }}"><h3>{{i.title}}<h3></h3></a>
+                        <a>{{i.matn}}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row footer">
+        </div>
+        <div class="col-12 col-md-6 col-sm-6 main-card2">
+            <center><h4>NEWSLETTER</h4></center>
+            <center><p>Subscribe to <a href="#">@codialuz</a> telegram channel where I share interesting & useful stuff.</p></center>
+
+        </div>
+    </div>
+</body>
+</html>
